@@ -104,6 +104,55 @@ public class railfence {
 
     </div>
 
+
+
+    Practical 1 — Persistent / Stored XSS in DVWA
+
+Aim: To simulate a persistent Cross-Site Scripting (Stored XSS) attack.
+
+Steps
+Extract the DVWA ZIP file.
+Copy the DVWA folder.
+Paste it into:
+C:\xampp\htdocs
+Rename the folder to DVWA.
+Open the DVWA config folder.
+Rename the configuration file to config.inc.php as required by your lab setup.
+Start Apache and MySQL from XAMPP.
+Open Chrome and go to:
+http://localhost/DVWA
+Click Create / Reset Database.
+Log in using your lab credentials.
+Go to DVWA Security.
+Set the security level to Low and click Submit.
+Open XSS (Stored).
+Enter your lab-approved harmless XSS test payload in the input field.
+Click Sign Guestbook.
+Reload the page.
+Observe that the stored test script executes again.
+This demonstrates Stored/Persistent XSS.
+Practical 2 — SQL Injection in DVWA
+
+Aim: To perform a SQL Injection attack.
+
+Steps
+Make sure XAMPP Apache and MySQL are running.
+Open Chrome and go to:
+http://localhost/DVWA
+Log in to DVWA.
+Go to DVWA Security.
+Set the security level to Low and click Submit.
+Open SQL Injection from the left-side menu.
+First enter a normal value such as:
+1
+Click Submit.
+Observe the normal database result.
+For the lab demonstration, enter the SQL Injection test input specified in your practical sheet.
+Click Submit.
+Compare the result with the normal 1 query.
+Explain that specially crafted input can change the intended SQL query logic.
+The practical demonstrates the SQL Injection vulnerability in the intentionally vulnerable DVWA environment.
+
 </div>
 
 </body>
